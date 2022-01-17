@@ -24,7 +24,8 @@
         console.log(add7$ (5));
 
 
-         // Practice 2
+         
+        // Practice 2
          //function declaration
          let multiply = function (a, b) {
             return a * b;
@@ -39,6 +40,7 @@
 
         console.log(multiply$ (8, 2));
 
+        
         //Practice 3
         //function declaration
         function capitalize (string) {
@@ -54,6 +56,46 @@
 
         console.log(capitalize2 ('tak is my name!'));
 
+        
+        //Practice 4
+        //function declaration
+        function lastLetter (string) {
+            return string.slice(-1);
+        }
+
+        console.log(lastLetter ('hey there'));
+
+        //function expression
+        let lastLetter2 = function (string) {
+            return string.slice(-1);
+        };
+
+        console.log(lastLetter2 ('hey there'));
+
+        /* Fundamentals 3 Knowledge Check
+        What are functions useful for?
+        - Storing and running blocks of code repeatedly
+        - Make your code fast and efficient without having to rewrite code over and over again
+
+        How do you invoke a function?
+        - Invoke means run
+        - You invoke by calling the function name again
+
+        What are anonymous functions?
+        - A function that has no name
+
+        What is function scope?
+        - Whether a function has a global scope or a local scope
+        - Global scope means a variable declared outside of a function which can be called by any function
+        - Local scope means a variable declared inside a function and can be called only by the corresponding function
+
+        What are return values?
+        - Actually returning a value inside a code 
+
+        What are arrow functions?
+        - A new feature in Javascript that can create very short and efficient functions
+        - Syntax: let arrow = (parameter1, parameter2) => expression;
+        */
     </script>
 </body>
 </html>
