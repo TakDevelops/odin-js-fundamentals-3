@@ -30,14 +30,30 @@
             return a * b;
         };
         
-        multiply (1, 2);
+        console.log(multiply (1, 2));
 
         //function expression
         function multiply$ (a, b) {
             return a * b;
         }
 
-        multiply$ (8, 2);
+        console.log(multiply$ (8, 2));
+
+        //Practice 3
+        //function declaration
+        function capitalize (string) {
+            return string[0].toUpperCase(string) + string.substring(1);
+        }
+
+        console.log(capitalize ('hello there!'));
+
+        //function expression
+        let capitalize2 = function (string) {
+            return string[0].toUpperCase() + string.substring(1);
+        };
+
+        console.log(capitalize2 ('tak is my name!'));
+
     </script>
 </body>
 </html>
