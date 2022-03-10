@@ -96,6 +96,82 @@
         - A new feature in Javascript that can create very short and efficient functions
         - Syntax: let arrow = (parameter1, parameter2) => expression;
         */
+
+        //PRACTICE (end of page)
+        
+        // 1. Write a function called add7 that takes one number and returns that number + 7.
+        //Arrow function:
+        let add7 = (n) => n + 7;
+        console.log(add7 (5));
+
+        //Function declaration:
+        function add7 (n) {
+            return (n + 7);
+        }
+        console.log(add7 (5));
+
+        //Function expression:
+        let add7 = function (n) {
+            return n + 7;
+        };
+        console.log(add7 (5));
+
+        //2. Write a function called multiply that takes 2 numbers and returns their product.
+        //Arrow function:
+        let multiply = (a,b) => a * b;
+        console.log(multiply(3,5));
+
+        //Function declaration:
+        function multiply (a,b) {
+            return a * b;
+        }
+        console.log(multiply(3,5));
+
+        //Function expression:
+        let multiply = function (a,b) {
+            return a * b;
+        };
+        console.log(multiply(3,5));
+
+        //3. Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+        //Function declaration:
+        function capitalize (string) {
+            return string[0].toUpperCase() + string.slice(1);
+        }
+
+        string = prompt('Write any sentence without any caps', 'like this, no caps at all');
+
+        capitalize (string);
+        alert (capitalize(string));
+
+        //Function expression:
+        let capitalize = function (string) {
+            return string[0].toUpperCase() + string.slice(1);
+        };
+
+        string = prompt ('Type a sentence below with no caps','');
+        capitalize (string);
+        
+        //Arrow function:
+        let capitalize = (string) =>
+            string[0].toUpperCase() + string.slice(1);
+
+        string = prompt ('Type a sentence without any caps', 'like this, no caps');
+
+        capitalize (string[0].toUpperCase());
+
+
+        //4. Write a function called lastLetter that takes a string and returns the very last letter of that string: lastLetter("abcd") should return "d"
+        //Function declaration:
+        function lastLetter (string) {
+            return string.slice(-1);
+        }
+
+        string = prompt ('Type a sentence below', '');
+        lastLetter(string);
+        
+        //Function expression:
+
     </script>
 </body>
 </html>
